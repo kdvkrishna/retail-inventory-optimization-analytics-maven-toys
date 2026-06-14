@@ -1,5 +1,13 @@
 # Retail Growth & Inventory Optimization Analytics
 
+## Tech Stack
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1)
+![PostgreSQL](https://img.shields.io/badge/Database-blue)
+![PowerBI](https://img.shields.io/badge/Power_BI-F2C811)
+![PowerBI](https://img.shields.io/badge/DAX-KPI_Reporting-green)
+
+
 An end-to-end Retail, Inventory, and Supply Chain Analytics project built using PostgreSQL and Power BI to analyze 800K+ retail transactions, identify revenue drivers, optimize inventory allocation, and generate actionable business insights for operational decision-making.
 
 ---
@@ -123,10 +131,12 @@ Contains:
 * Retail Analytics
 * Inventory Analytics
 * Supply Chain Analytics
+* Pareto Distribution
 * Profitability Analysis
 * Operational Analytics
 
 ---
+
 
 # Project Workflow
 
@@ -143,44 +153,19 @@ CSV Files
 
 ---
 
-# Key Analytics Performed
+# Advanced Features Implemented
 
-## Revenue Analysis
-
-* Revenue trends over time
-* Revenue by city
-* Revenue by category
-* Revenue contribution analysis
-
-## Store Performance Analysis
-
-* Top and bottom performing stores
-* Revenue by store location type
-* Profitability by store
-* Store maturity analysis
-
-## Product Analytics
-
-* Product profitability analysis
-* Revenue vs profit analysis
-* Margin analysis
-* Product category performance
-
-## Inventory & Supply Chain Analytics
-
-* Inventory turnover analysis
-* Demand-to-stock ratio
-* Stockout risk analysis
-* Inventory allocation analysis
-* Overstock identification
-
-## Strategic Analytics
-
+* Advanced SQL analytics
+* Window functions
+* CTE-based analysis
+* Interactive Power BI dashboards
+* Dynamic DAX measures
+* Executive KPI cards
+* Inventory optimization analytics
+* Supply chain risk analysis
 * ABC inventory classification
 * Pareto analysis
-* Executive optimization recommendations
 
----
 
 # Dashboard Overview
 
@@ -194,6 +179,7 @@ Provides a high-level summary of:
 
 * Revenue
 * Profit
+* Sales
 * Profit Margin
 * Revenue trends
 * Revenue by city
@@ -205,23 +191,23 @@ Provides a high-level summary of:
 * Seasonal sales trends
 * Category contribution analysis
 
----
-
 ## Page 2 — Store Performance Analytics
 
 Analyzes:
 
-* Store revenue
-* Store profitability
-* Revenue by location type
-* Top & bottom stores
+* Store Revenue
+* Store Profitability
+* Revenue Contribution by location type
+* Top performing stores
 * Store age impact
+* Store Distribution among Location in different Cities
+
 
 ### Key Insights
 
-* Downtown stores outperform other locations
+* Downtown stores outperform other locations while airport stores punched above their weight
 * Significant revenue variance across cities
-* Older stores show stronger customer retention
+* Age of stores have near zero impact on revenue
 
 ---
 
@@ -238,8 +224,8 @@ Analyzes:
 ### Key Insights
 
 * High-selling products do not always generate high profit
-* Margin performance varies significantly across categories
 * Certain niche products maintain strong profitability
+* Some categories have consistently falling revenue
 
 ---
 
@@ -250,7 +236,7 @@ Analyzes:
 * Inventory levels
 * Inventory turnover
 * Stockout risk
-* Demand vs Inventory
+* Sales vs Inventory
 * Inventory distribution
 
 ### Key Insights
@@ -296,11 +282,11 @@ The project includes advanced business metrics such as:
 
 # Major Business Insights
 
-* Approximately XX% of products contributed nearly XX% of total revenue.
-* Downtown stores generated the highest average revenue and profitability.
+* Approximately 40% of products contributed nearly 80% of total revenue.
+* Downtown stores produced more overall sales while airport stores generated the highest average revenue and profitability.
 * Several high-demand products maintained critically low inventory levels.
 * Certain low-performing products remained significantly overstocked.
-* Revenue growth demonstrated seasonal spikes during holiday periods.
+* Revenue growth demonstrated occasional seasonal spikes.
 * Inventory turnover varied substantially across product categories.
 
 ---
@@ -341,21 +327,6 @@ Leverage historical sales trends and seasonality to improve future procurement p
 
 ---
 
-# Advanced Features Implemented
-
-* Advanced SQL analytics
-* Window functions
-* CTE-based analysis
-* Interactive Power BI dashboards
-* Dynamic DAX measures
-* Executive KPI cards
-* Inventory optimization analytics
-* Supply chain risk analysis
-* ABC inventory classification
-* Pareto analysis
-
----
-
 # Repository Structure
 
 ```text
@@ -376,23 +347,27 @@ Retail-Inventory-Optimization-Analytics/
 
 ## Executive Overview
 
-(Add screenshot here)
+<img width="910" height="549" alt="page_1_maven_toys" src="https://github.com/user-attachments/assets/33110573-78bb-4a73-977c-001495208a6c" />
 
 ## Store Performance Analytics
 
-(Add screenshot here)
+<img width="913" height="547" alt="page_2_maven_toys" src="https://github.com/user-attachments/assets/3ee86113-b031-4b61-b67d-503cd0c8d199" />
+
 
 ## Product Analytics
 
-(Add screenshot here)
+<img width="912" height="547" alt="page_3_maven_toys" src="https://github.com/user-attachments/assets/c390edb2-060a-44f1-89e1-c2e481f8aa50" />
+
 
 ## Inventory & Supply Chain Analytics
 
-(Add screenshot here)
+<img width="909" height="547" alt="page_4_maven_toys" src="https://github.com/user-attachments/assets/f0a7633c-59c1-43a0-8898-0f134ac0dc1c" />
+
 
 ## Executive Strategy Dashboard
 
-(Add screenshot here)
+<img width="972" height="569" alt="page_5_maven_toys" src="https://github.com/user-attachments/assets/af93f213-8afc-4665-ad3e-b5cd200d7ec4" />
+
 
 ---
 
@@ -428,6 +403,6 @@ the project delivers a scalable framework for improving operational efficiency, 
 
 # Author
 
-Krishna Vajpayee
+Krishna Devsishu
 
 If you found this project interesting, feel free to connect or provide feedback.
